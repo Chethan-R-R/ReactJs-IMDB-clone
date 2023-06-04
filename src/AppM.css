@@ -18,7 +18,13 @@
     top:6;
 
 }
-.searchm>h1{
+.aboutm{
+    z-index: 1;
+    position: fixed;
+    right: 130;
+    top:6;
+}
+.searchm>h1,.aboutm>h1{
     font-size: small;
     font-style: italic;
     font-weight: 400;
@@ -28,6 +34,6 @@
     transition-duration: 250ms;
     padding: 0 5 0 10;
 }
-.searchm>h1>span{
+.searchm>h1>span,.aboutm>h1>span{
     margin: 5 5 5 5;
 }

@@ -25,6 +25,11 @@ const App=()=>{
         <h1>search <span className="fa fa-search" ></span></h1>
         </div>
       </Link>
+      <Link to="https://github.com/Chethan-R-R">
+        <div className="about">
+        <h1>About<span className="fa fa-info-circle" ></span></h1>
+        </div>
+      </Link>
       <Routes >
           <Route path="" element={<Home />}/>
           <Route path=":show/:type" element={<Display />} />
