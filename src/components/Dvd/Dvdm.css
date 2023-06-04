@@ -59,10 +59,8 @@
     transform: translate(45px,50px);
     transition-duration: 500ms;
 }
-.dvd1m{
-    
+.dvd1m{  
     position:relative;
-    margin-top: 25px;
     margin-bottom: -50px;
     transition-duration: 500ms ;
 }
