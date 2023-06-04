@@ -1,0 +1,13 @@
+.homem{
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+}
+.homem::-webkit-scrollbar{
+    display: none;
+}
+.homem>h1{
+    color: whitesmoke;
+    font-size: 15;
+    margin: 20 0 0 20;
+}

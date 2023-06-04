@@ -1,0 +1,19 @@
+.trailerPlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.trailerPlay>iframe{
+    
+    border: 0;
+    border-radius: 15px;
+}
+.trailerPlay>span{
+    position: absolute;
+    font-size: larger;
+    font-weight: 100;
+    
+    color: azure;
+}

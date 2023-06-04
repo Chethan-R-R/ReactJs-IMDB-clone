@@ -1,0 +1,29 @@
+.cslideimg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.carouselimg{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(160deg,rgba(0,0,0, 0.1),rgba(0,0,0,9));
+}
+.carouselimg>img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    z-index: -1;
+}
+.carouseldetail{
+    position: absolute;
+    color: aliceblue;
+    right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    bottom: 10px;
+}
+.carouseldetail>*{
+    margin: 5px;
+}

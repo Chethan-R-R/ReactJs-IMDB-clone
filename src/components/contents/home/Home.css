@@ -1,0 +1,13 @@
+.home{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+.home::-webkit-scrollbar{
+    display: none;
+}
+.home>h1{
+    color: whitesmoke;
+    margin: 20 0 0 20;
+    font-weight: 500;
+}

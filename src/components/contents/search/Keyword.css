@@ -1,0 +1,13 @@
+.single_keyword{
+    width: 50%;
+    height: 38px;
+    background-color: rgba(0, 80, 130, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid rgba(0, 10, 30, 0.75);
+
+}
+.single_keyword>p{
+    font-size: 14;
+}

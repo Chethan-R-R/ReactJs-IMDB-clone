@@ -1,0 +1,8 @@
+.movielistwrapper{
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+}
+.movielistwrapper::-webkit-scrollbar{
+    display: none;
+}

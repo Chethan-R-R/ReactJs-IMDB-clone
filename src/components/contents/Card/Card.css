@@ -1,0 +1,53 @@
+.card{
+    position: relative;
+    
+}
+.cardimg>img{
+    position: absolute;
+    width: 100%;
+    height:100%
+}
+.carddetail{
+    visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: white;
+    top: 0;
+}
+.card:hover{
+    transform: scale(1.1);
+    transition-duration: 150ms;
+}
+.card:hover .carddetail{
+    visibility: visible;
+    z-index: 3;
+}
+.carddetail::before{
+    z-index: -1;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top:0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.carddetail *{
+  
+  margin: 10px 0 10px 10px;
+}
+
+.fa-star{
+    margin-left: 0;
+    color: gold;
+}
+.fa-angle-double-right{
+    color: red;
+    font-size: large;
+    font-weight: 500;
+}
+.more{
+    position: absolute;
+    bottom: 0;
+}
