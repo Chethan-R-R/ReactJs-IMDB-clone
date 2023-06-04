@@ -16,7 +16,7 @@ const Carousel=(props)=>{
     if(props.data){
         
         return(
-            <div className="carouselouter" style={ww ? {height:"60%",width:"100%"}:{width:"100%",aspectRatio:"2/1"}}>
+            <div className="carouselouter" style={ww ? {height:"60%",width:"100%"}:{width:"100%",aspectRatio:"2/1.2"}}>
             <div className="carousel" >
                     {<Carouselimg isMovie={props.isMovie} show={props.data[slide]} ww={ww} slide={slide}/>}
             </div>

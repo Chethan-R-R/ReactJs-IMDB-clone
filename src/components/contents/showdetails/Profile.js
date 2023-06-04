@@ -1,10 +1,13 @@
-import { useEffect, useState } from "react"
+import { useRef } from "react"
 import CastCard from "./CastCard"
 import Movielist from "../movielist/Movielist"
 const Profile=(props)=>{
-    
+    const show_details_ref=useRef()
+    if(show_details_ref.current){
+        show_details_ref.current.scrollTo(0,0)
+    }
     return(
-        <div className="showDetails">
+        <div className="showDetails" ref={show_details_ref}>
                 <div className="profile">
                     <div className="dp">
                         <img src={`https://image.tmdb.org/t/p/original/${props.showdetails_data.poster_path}`} />

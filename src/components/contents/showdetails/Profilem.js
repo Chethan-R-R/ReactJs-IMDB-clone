@@ -1,12 +1,14 @@
 import CastCard from "./CastCard"
 import "./Profilem.css"
 import Movielist from "../movielist/Movielist"
-import { useEffect, useState } from "react"
-
+import { useRef } from "react"
 const Profilem=(props)=>{
-    
+    const show_details_ref=useRef()
+    if(show_details_ref.current){
+        show_details_ref.current.scrollTo(0,0)
+    }
     return(
-        <div className="showDetailsm">
+        <div className="showDetailsm" ref={show_details_ref}>
                 <div className="profilem">
                     <div className="titlebgm" style={{backgroundImage:`linear-gradient(160deg,rgba(0,0,0, 0.1),rgba(0,0,0,10)),URL(${`https://image.tmdb.org/t/p/original${props.showdetails_data.backdrop_path}`})`}}>
                     <h1>{props.show==="tv" ? props.showdetails_data.name:props.showdetails_data.title}</h1>
