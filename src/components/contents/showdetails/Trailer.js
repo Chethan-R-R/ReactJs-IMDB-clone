@@ -12,7 +12,6 @@ const Trailer=(props)=>{
     },[])
     let Trailer=useRef()
     if(TrailerList){
-        console.log(TrailerList)
         for(let i=0;i<TrailerList.length;i++){
             if(TrailerList[i].type==="Trailer" ){
                 Trailer.current=TrailerList[i].key
@@ -24,7 +23,7 @@ const Trailer=(props)=>{
         <div className="trailerPlay">
             <span style={pc ? {top:120,right: 100}:{top:150,right: 10}}className="fa fa-close" onClick={props.handleTrailerClick}></span>
 
-            <iframe style={pc ? {width:853,height:400}:{width:"100%",height:200}}allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen src={`https://www.youtube-nocookie.com/embed/${Trailer.current}`} />
+            <iframe style={pc ? {width:853,height:400}:{width:"100%",aspectRatio:'2/1',maxHeight:"96vh"}}allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen src={`https://www.youtube-nocookie.com/embed/${Trailer.current}`} />
 
         </div>
     )
