@@ -22,10 +22,10 @@ const AppM=()=>{
       {showdvd && <Headerm handleclick={handleclick} />}
     <div className="contentsm">
     <Link to={"/"}>
-        <div style={{position:"fixed",backgroundColor:"rgba(0,0,0,0.7)",rotate:"-40deg",top:-75,left:-65,height:90,width:250,display:"flex",alignItems:"flex-end",zIndex:"10",padding:"0 0 4 16"}}>
+        <div style={{position:"fixed",backgroundColor:"rgba(0,0,0,0.7)",transform:"rotate(-40deg)",top:-75,left:-65,height:90,width:250,display:"flex",alignItems:"flex-end",zIndex:"10",padding:"0 0 4 16"}}>
           <img src={logo} alt="" style={{rotate:"40deg"}} width={"100px"}/>
-          <p style={{rotate:"40deg",color:"rgba(0,190,255,0.9)",fontWeight:900,position:"absolute",left:64,top:48,fontSize:12}}>RR</p>
-          <p style={{rotate:"40deg",color:"rgba(0,190,255,0.9)",fontWeight:500,position:"absolute",left:80,top:70,fontSize:12}}>Movies</p>
+          <p style={{transform:"rotate(40deg)",color:"rgba(0,190,255,0.9)",fontWeight:900,position:"absolute",left:64,top:48,fontSize:12}}>RR</p>
+          <p style={{transform:"rotate(40deg)",color:"rgba(0,190,255,0.9)",fontWeight:500,position:"absolute",left:80,top:70,fontSize:12}}>Movies</p>
         </div>
       </Link>
       <Link to={"/search"}>

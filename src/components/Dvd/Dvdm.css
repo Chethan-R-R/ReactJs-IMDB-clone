@@ -3,8 +3,7 @@
     margin-left: -100px;
     width: 250px;
     height: 150px;
-    transform: skew(0deg,45deg);
-    rotate: -45deg;
+    transform:rotate(-45deg) skew(0deg,45deg);
     margin-bottom: -52px;
     z-index: 1;
     box-shadow: 4px 8px 4px  black;
