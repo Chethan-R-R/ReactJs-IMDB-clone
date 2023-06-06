@@ -38,7 +38,7 @@ const Profilem=(props)=>{
                     }
                 </div>
                 {props.similar.length!==0 && <h2>Recommendations</h2>}
-                {props.similar.length!==0 && <div className="similarlist"><Movielist isMovie={false} home={false} data={props.similar}/></div>}
+                {props.similar.length!==0 && <div className="similarlist"><Movielist isMovie={props.show==="movie"} home={false} data={props.similar}/></div>}
                 </div>
     )
 }
